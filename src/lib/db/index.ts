@@ -7,10 +7,10 @@ import mysql from 'mysql2/promise';
 import bcrypt from 'bcryptjs';
 
 const dbConfig = {
-  host: process.env.DB_HOST|| '193.203.166.175',
-  user: process.env.DB_USER || 'u406732176_aicaller',
-  password: process.env.DB_PASSWORD || 'Aicaller@1234',
-  database: process.env.DB_NAME || 'u406732176_aicaller',
+  host: process.env.DB_HOST|| '',
+  user: process.env.DB_USER || '',
+  password: process.env.DB_PASSWORD || '',
+  database: process.env.DB_NAME || '',
 };
 
 let connection: mysql.Connection | null = null;
